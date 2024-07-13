@@ -91,7 +91,7 @@ class Agent(object):
 
         #Compute critic and actor losses
         actor_loss = (-action_log_probs * advantages).sum()
-        critic_loss = F.mse_loss(state_values,state_values_next.detach())
+        critic_loss = F.mse_loss(state_values,r_bootstrapped.detach())
         actor_critic_loss = actor_loss + critic_loss
 
         self.optimizer.zero_grad()
