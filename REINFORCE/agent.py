@@ -80,7 +80,7 @@ class Agent(object):
 
 
         discounted_returns = (discounted_returns - discounted_returns.mean())/ discounted_returns.std() #whitening
-        #discounted_returns = discounted_returns                                                        #withpout baseline
+        #discounted_returns = discounted_returns                                                        #without baseline
         #discounted_returns = discounted_returns - self.b                                               #with baseline
 
         loss = -torch.mul(discounted_returns, action_log_probs).mean()
