@@ -16,7 +16,7 @@ from timeit import default_timer as timer
 
 #wandb.init(
 #		# Set the project where this run will be logged
-#		project="RLProjectA-C", # cambiare
+#		project="RLProjectA-C",
 #		# We pass a run name (otherwise it’ll be randomly assigned, like sunshine-lollypop-10)
 #		name="train_actor_critic",
 #		# Track hyperparameters and run metadata
@@ -24,7 +24,7 @@ from timeit import default_timer as timer
 #		"learning_rate": 1e-3,
 #		"architecture": "Actor_critic",
 #		"dataset": "none",
-#		"epochs": 150000,
+#		"epochs": 10000,
 #		})
 
 
